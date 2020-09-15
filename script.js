@@ -48,7 +48,7 @@ Hamburger.prototype.addTopping = function(topping) {
 }
 
 Hamburger.prototype.getCallories = function() {
-    return this.toppings.reduce(function (sum, topping) {
+    return this.toppings.reduce(function(sum, topping) {
         return sum + topping.calories;
     }, this.size.price);
 }
